@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Secure File Storage</title>
+
+<style>
+:root {
+  --card:#1e1e2f;
+  --border:#2e2e42;
+  --bg:#141421;
+  --text:#ffffff;
+}
+
+body {
+  margin:0;
+  font-family:Arial;
+  background:var(--bg);
+  color:var(--text);
+}
+
+.table {
+  width:90%;
+  margin:40px auto;
+  border-collapse:collapse;
+}
+
+.table th, .table td {
+  padding:12px;
+  border-bottom:1px solid var(--border);
+}
+
+.cell-actions {
+  display:flex;
+  gap:10px;
+}
+
+.btn-icon {
+  background:#2a2a40;
+  border:1px solid var(--border);
+  color:white;
+  padding:6px 10px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.btn-upload {
+  background:#4CAF50;
+  border:none;
+  color:white;
+  padding:8px 14px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.form-label {
+  display:block;
+  margin-bottom:6px;
+}
+
+.form-input {
+  width:100%;
+  padding:8px;
+  border-radius:6px;
+  border:1px solid var(--border);
+  background:#1c1c2e;
+  color:white;
+}
+
+.toast {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#333;
+  padding:12px 20px;
+  border-radius:6px;
+  display:none;
+}
+</style>
+</head>
+
+<body>
+
+<h2 style="text-align:center;margin-top:30px;">My Files</h2>
+
+<table class="table">
+<thead>
+<tr>
+  <th>Filename</th>
+  <th>Actions</th>
+</tr>
+</thead>
+<tbody id="file-table-body">
+</tbody>
+</table>
+
+<!-- Secure Share Modal -->
+<div id="share-modal" style="position:fixed;inset:0;background:rgba(0,0,0,0.6);display:none;align-items:center;justify-content:center;z-index:1000;">
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;width:400px;">
+    <h3 style="margin-bottom:16px;">Secure File Share</h3>
+
+    <label class="form-label">Recipient Username</label>
+    <input class="form-input" id="share-recipient" type="text" placeholder="friend_username">
+
+    <label class="form-label" style="margin-top:12px;">Password</label>
+    <div style="display:flex;gap:6px;">
+      <input class="form-input" id="share-password" type="text" placeholder="Auto-generate or enter manually">
+      <button class="btn-icon" onclick="generateRandomPassword()">🎲</button>
+    </div>
+
+    <div style="margin-top:18px;display:flex;justify-content:flex-end;gap:10px;">
+      <button class="btn-icon" onclick="closeShareModal()">✖</button>
+      <button class="btn-upload" onclick="sendSecureShare()">Send Securely</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+
+const token = "demo-token"; // replace with real auth token
+let shareFileHash = null;
+
+// Demo file data
+const files = [
+  { filename:"report.pdf", file_hash:"abc123" },
+  { filename:"photo.png", file_hash:"xyz789" }
+];
+
+function escQ(str) {
+  return str.replace(/'/g,"\\'");
+}
+
+async function loadFiles() {
+  const tbody = document.getElementById("file-table-body");
+  tbody.innerHTML = "";
+
+  files.forEach(f => {
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
+      <td>${f.filename}</td>
+      <td>
+        <div class="cell-actions">
+          <button class="btn-icon dl" onclick="doDownload('${f.file_hash}','${escQ(f.filename)}')" title="Download">⬇</button>
+
+          <button class="btn-icon" onclick="openShareModal('${f.file_hash}')" title="Secure Share">🔗</button>
+
+          <button class="btn-icon del" onclick="doDelete('${f.file_hash}','${escQ(f.filename)}')" title="Delete">🗑</button>
+        </div>
+      </td>
+    `;
+
+    tbody.appendChild(row);
+  });
+}
+
+function doDownload(hash,name) {
+  showToast("Downloading " + name,"success");
+}
+
+function doDelete(hash,name) {
+  showToast("Deleted " + name,"success");
+}
+
+// Share Modal Functions
+function openShareModal(hash) {
+  shareFileHash = hash;
+  document.getElementById('share-recipient').value = '';
+  document.getElementById('share-password').value = '';
+  document.getElementById('share-modal').style.display = 'flex';
+}
+
+function closeShareModal() {
+  document.getElementById('share-modal').style.display = 'none';
+  shareFileHash = null;
+}
+
+function generateRandomPassword() {
+  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
+  let pass = "";
+  for (let i = 0; i < 16; i++) {
+    pass += chars.charAt(Math.floor(Math.random() * chars.length));
+  }
+  document.getElementById('share-password').value = pass;
+}
+
+async function sendSecureShare() {
+  const recipient = document.getElementById('share-recipient').value.trim();
+  const password = document.getElementById('share-password').value.trim();
+
+  if (!recipient || !password) {
+    showToast("Recipient and password required","error");
+    return;
+  }
+
+  try {
+    // Simulated backend call
+    await new Promise(r=>setTimeout(r,800));
+
+    showToast("✓ File shared securely!","success");
+    closeShareModal();
+
+  } catch (e) {
+    showToast("Share error: " + e.message,"error");
+  }
+}
+
+// Toast
+function showToast(message,type) {
+  const toast = document.getElementById("toast");
+  toast.innerText = message;
+  toast.style.display = "block";
+  setTimeout(()=>toast.style.display="none",3000);
+}
+
+loadFiles();
+
+</script>
+
+</body>
+</html>
