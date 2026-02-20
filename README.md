@@ -61,24 +61,22 @@ Hash Chain Audit Ledger (Tamper Proof)
 <img width="1901" height="913" alt="Screenshot 2026-02-21 002347" src="https://github.com/user-attachments/assets/d16af001-8346-484e-a063-4335ab621dfb" />
 **Login**
 <img width="1263" height="615" alt="image" src="https://github.com/user-attachments/assets/356bf08a-c912-4818-a227-6efc22267bf1" />
+
 <img width="1909" height="912" alt="Screenshot 2026-02-21 002623" src="https://github.com/user-attachments/assets/702a4dc9-33b8-45b1-8021-5633f3a94ed2" />
-<img width="1909" height="912" alt="Screenshot 2026-02-21 002623" src="https://github.com/user-attachments/assets/702a4dc9-33b8-45b1-8021-5633f3a94ed2" />
-<img width="1911" height="913" alt="Screenshot 2026-02-21 002439" src="https://github.com/user-attachments/assets/4adf7ea3-374c-461d-9ce6-ead7c49f3301" />
+
 <img width="1911" height="913" alt="Screenshot 2026-02-21 002439" src="https://github.com/user-attachments/assets/4adf7ea3-374c-461d-9ce6-ead7c49f3301" />
 
 <img width="1911" height="913" alt="Screenshot 2026-02-21 002439" src="https://github.com/user-attachments/assets/4b29d0d0-408c-4fc9-8da7-3d243f8bb143" />
-<img width="1911" height="913" alt="Screenshot 2026-02-21 002439" src="https://github.com/user-attachments/assets/4b29d0d0-408c-4fc9-8da7-3d243f8bb143" />
-<img width="1900" height="910" alt="Screenshot 2026-02-21 002546" src="https://github.com/user-attachments/assets/fd49ea2c-c449-4c06-84d0-25cd71558187" />
+
 <img width="1900" height="910" alt="Screenshot 2026-02-21 002546" src="https://github.com/user-attachments/assets/fd49ea2c-c449-4c06-84d0-25cd71558187" />
 
 <img width="1902" height="912" alt="Screenshot 2026-02-21 002531" src="https://github.com/user-attachments/assets/29e28e3a-3974-4c1a-897a-26dbce467cf0" />
-<img width="1902" height="912" alt="Screenshot 2026-02-21 002531" src="https://github.com/user-attachments/assets/29e28e3a-3974-4c1a-897a-26dbce467cf0" />
-<img width="1900" height="929" alt="Screenshot 2026-02-21 002605" src="https://github.com/user-attachments/assets/7c070f84-1773-4b7b-91aa-597bb8c6145b" />
-<img width="1908" height="919" alt="Screenshot 2026-02-21 002614" src="https://github.com/user-attachments/assets/0062999e-32eb-4621-9d7b-4680f24cc024" />
-<img width="1908" height="919" alt="Screenshot 2026-02-21 002614" src="https://github.com/user-attachments/assets/0062999e-32eb-4621-9d7b-4680f24cc024" />
 
 <img width="1900" height="929" alt="Screenshot 2026-02-21 002605" src="https://github.com/user-attachments/assets/7c070f84-1773-4b7b-91aa-597bb8c6145b" />
 
+<img width="1908" height="919" alt="Screenshot 2026-02-21 002614" src="https://github.com/user-attachments/assets/0062999e-32eb-4621-9d7b-4680f24cc024" />
+
+<img width="1900" height="929" alt="Screenshot 2026-02-21 002605" src="https://github.com/user-attachments/assets/7c070f84-1773-4b7b-91aa-597bb8c6145b" />
 
 
 
@@ -229,3 +227,4 @@ Webhook Notifications — Alert external systems on file events or policy violat
 👥 Team
 Team Name: Innovative Hackers
 Hackathon: Zero-Trust GDPR-Compliant Cloud Storage Challenge
+
