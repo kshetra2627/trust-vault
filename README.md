@@ -4,6 +4,8 @@ A zero-trust secure storage platform designed for regulatory compliance (GDPR & 
 
 
 **🧠 What is TrustVault?**
+
+
 TrustVault is a working prototype of a zero-trust secure storage platform that addresses a critical gap in existing cloud storage: provider-controlled encryption and centralized trust models create risks related to key exposure, unauthorized access, and audit manipulation.
 This prototype demonstrates client-side AES-256-GCM encryption, JWT-based authentication, OPA policy enforcement, SHA-256 deduplication, and an immutable cryptographic hash-chain audit ledger.
 Target use cases: Hospitals storing patient records, financial institutions managing sensitive documents — industries with strict GDPR and audit requirements.
@@ -71,26 +73,46 @@ Hash Chain Audit Ledger (Tamper Proof)
 **🗂️ Project Structure**
 trustvault/
 │
-├── main.py               # FastAPI backend, all routes
+
+├── main.py  # FastAPI backend, all routes
+
 ├── auth.py               # JWT authentication
+
 ├── database.py           # PostgreSQL connection
+
 ├── models.py             # SQLAlchemy models
+
 ├── encryption.py         # AES-256-GCM encryption module
+
 ├── audit.py              # Immutable hash-chain audit logger
+
 ├── secure_share.py       # Password-protected file sharing
+
 ├── share_routes.py       # Share API routes
+
 ├── schemas.py            # Pydantic schemas
+
 ├── security.py           # Security utilities
+
 ├── opa_client.py         # OPA policy enforcement client
+
 ├── policy.rego           # OPA zero-trust policy rules
+
 ├── storage.py            # File storage handler
+
 ├── file_service.py       # File business logic
+
 ├── docker-compose.yml    # Docker orchestration
+
 ├── Dockerfile            # Container definition
+
 ├── requirements.txt      # Python dependencies
+
 │
 └── frontend/
+
     └── index.html        # Full UI (Dashboard, Files, Audit, Settings)
+
 
 ⚙️ Tech Stack
 Layer                      Technology
@@ -215,6 +237,7 @@ Webhook Notifications — Alert external systems on file events or policy violat
 👥 Team
 Team Name: Innovative Hackers
 Hackathon: Zero-Trust GDPR-Compliant Cloud Storage Challenge
+
 
 
 
