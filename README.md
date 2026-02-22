@@ -57,27 +57,15 @@ Client-Side AES-256-GCM Encryption
 PostgreSQL (Metadata + Audit Logs)
       ↓
 Hash Chain Audit Ledger (Tamper Proof)
-**Register.py**
-<img width="1901" height="913" alt="Screenshot 2026-02-21 002347" src="https://github.com/user-attachments/assets/d16af001-8346-484e-a063-4335ab621dfb" />
-**Login**
-<img width="1263" height="615" alt="image" src="https://github.com/user-attachments/assets/356bf08a-c912-4818-a227-6efc22267bf1" />
 
-<img width="1909" height="912" alt="Screenshot 2026-02-21 002623" src="https://github.com/user-attachments/assets/702a4dc9-33b8-45b1-8021-5633f3a94ed2" />
-
-<img width="1911" height="913" alt="Screenshot 2026-02-21 002439" src="https://github.com/user-attachments/assets/4adf7ea3-374c-461d-9ce6-ead7c49f3301" />
-
-<img width="1900" height="910" alt="Screenshot 2026-02-21 002546" src="https://github.com/user-attachments/assets/fd49ea2c-c449-4c06-84d0-25cd71558187" />
-
-<img width="1911" height="913" alt="Screenshot 2026-02-21 002439" src="https://github.com/user-attachments/assets/4b29d0d0-408c-4fc9-8da7-3d243f8bb143" />
-
-<img width="1902" height="912" alt="Screenshot 2026-02-21 002531" src="https://github.com/user-attachments/assets/29e28e3a-3974-4c1a-897a-26dbce467cf0" />
-
-<img width="1900" height="929" alt="Screenshot 2026-02-21 002605" src="https://github.com/user-attachments/assets/7c070f84-1773-4b7b-91aa-597bb8c6145b" />
-
-<img width="1908" height="919" alt="Screenshot 2026-02-21 002614" src="https://github.com/user-attachments/assets/0062999e-32eb-4621-9d7b-4680f24cc024" />
-
-
-
+<img width="1901" height="913" alt="Screenshot 2026-02-21 002347" src="https://github.com/user-attachments/assets/f63c588c-d17f-4528-81ce-69e449e7969e" />
+<img width="1910" height="910" alt="Screenshot 2026-02-21 002405" src="https://github.com/user-attachments/assets/19dcf297-21cb-438b-afe8-1fa874fe9293" />
+<img width="1909" height="912" alt="Screenshot 2026-02-21 002623" src="https://github.com/user-attachments/assets/1c1a9481-de13-4671-86d3-34f8e041967f" />
+<img width="1911" height="913" alt="Screenshot 2026-02-21 002439" src="https://github.com/user-attachments/assets/9b5416a2-035b-45d8-aa50-de45fd86a234" />
+<img width="1900" height="929" alt="Screenshot 2026-02-21 002605" src="https://github.com/user-attachments/assets/30fc7e98-53d0-4d52-8ea5-974d5838f5ca" />
+<img width="1902" height="912" alt="Screenshot 2026-02-21 002531" src="https://github.com/user-attachments/assets/7d55241d-6376-4d6b-bbe1-1d1055775f5e" />
+<img width="1900" height="910" alt="Screenshot 2026-02-21 002546" src="https://github.com/user-attachments/assets/635a42d4-a483-4db5-80bf-6cfa82cc2027" />
+<img width="1908" height="919" alt="Screenshot 2026-02-21 002614" src="https://github.com/user-attachments/assets/2778872a-5ec2-4f44-b9ae-1264c2796d19" />
 
 
 **🗂️ Project Structure**
@@ -227,5 +215,6 @@ Webhook Notifications — Alert external systems on file events or policy violat
 👥 Team
 Team Name: Innovative Hackers
 Hackathon: Zero-Trust GDPR-Compliant Cloud Storage Challenge
+
 
 
