@@ -4,16 +4,15 @@
 
 ## 🖼️ Interface Preview
 
-| :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/f63c588c-d17f-4528-81ce-69e449e7969e" width="400"> | <img src="https://github.com/user-attachments/assets/19dcf297-21cb-438b-afe8-1fa874fe9293" width="400"> |
 
-| :---: | :---: |
+
 | <img src="https://github.com/user-attachments/assets/1c1a9481-de13-4671-86d3-34f8e041967f" width="400"> | <img src="https://github.com/user-attachments/assets/9b5416a2-035b-45d8-aa50-de45fd86a234" width="400"> |
 
-| :---: | :---: |
+
 | <img src="https://github.com/user-attachments/assets/30fc7e98-53d0-4d52-8ea5-974d5838f5ca" width="400"> | <img src="https://github.com/user-attachments/assets/7d55241d-6376-4d6b-bbe1-1d1055775f5e" width="400"> |
 
-| :---: | :---: |
+
 | <img src="https://github.com/user-attachments/assets/635a42d4-a483-4db5-80bf-6cfa82cc2027" width="400"> | <img src="https://github.com/user-attachments/assets/2778872a-5ec2-4f44-b9ae-1264c2796d19" width="400"> |
 
 ---
@@ -74,4 +73,5 @@ TrustVault operates on a **Zero-Knowledge** model. Every request is verified thr
 
 ---
 **Innovative Hackers** *Hackathon: Zero-Trust GDPR-Compliant Cloud Storage Challenge*
+
 
